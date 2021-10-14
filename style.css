@@ -1,0 +1,893 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;600&display=swap');
+:root{
+    --Moderate-cyan: hsl(176, 50%, 47%);
+    --Dark-cyan: hsl(176, 72%, 28%);
+    --Black: hsl(0, 0%, 0%);
+    --Dark-gray: hsl(0, 0%, 48%);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Commissioner', sans-serif;
+    background:lightgrey;
+}
+
+.hamOpen,
+.close{
+    display:none;
+}
+
+button{
+    cursor: pointer;
+}
+
+a{
+    color:inherit;
+    text-decoration: none;   
+    transition: text-decoration 2s;
+}
+
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image:url(images/image-hero-desktop.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    padding:30px 140px 20% 150px; 
+    color:#fff;
+    font-weight:600;
+    font-size:20px;
+}
+
+.navbar .hamburger,
+.navbar .hamburger ul{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+.navbar .hamburger ul li{
+    margin:0 10px;
+    padding:10px;
+}
+
+     /* MAIN CONTENT ARTICLE DESIGN SECTION */
+
+.position{
+    /* background:#fff; */
+    margin:0 23vw;
+    opacity:10;
+    text-align: center;
+    position: relative;
+}
+
+/* COMPANY LOGO POSITIONING */
+
+
+.contentbox .img1{
+    position: relative;
+    top:-55px;
+}
+
+
+/* MAIN ARTICLE AND PUBLICATION AREA */
+.contentbox{
+    background:#fff;
+    margin:10px 0 0;
+    z-index: 3;
+    padding:30px 40px;
+    border-radius:10px;
+
+}
+
+.contentbox1{
+    position: relative;
+    top:-60px;
+}
+ h4{
+    font-size:24px;
+    font-weight:600;
+    margin:0 0px 20px;
+}
+
+p{
+    font-size:17px;
+    font-weight:500;
+    color:rgb(148, 148, 148);
+    margin:10px 0 30px;
+}
+
+
+/* BOOKMARK SECTION */
+
+.bookmarksection{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.bookmarksection .img2{
+    position: relative;
+    left:30px;
+    top:20px;
+}
+
+.bookmarksection button{
+    padding:16px 30px 16px 55px;
+    border-radius:30px;
+    border:none;
+    font-size:15px;
+    font-weight: 600;
+    color:var(--Dark-gray);
+    transition: background-color 2s;
+}
+
+
+
+
+.bookmarksection button:first-child{
+    padding:16px 30px;
+    background-color:var(--Moderate-cyan);
+    color:#fff;
+}
+
+
+
+/* CONTENT BOX 2 FIGURE AND NEEDED CASH AREA */
+.contentbox2{
+    position: relative;
+    top:-50px;
+    z-index: 1;
+}
+.flex{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin:10px 0;
+    text-align: left;
+}
+
+
+.flex .border{
+    border-right:2px solid lightgrey;
+    padding:0 30px 0 0;
+}
+
+.flex .border p{
+    padding:0;
+}
+
+.flex .border:nth-child(2){
+    padding:0 70px 0 0;
+}
+
+/* BAR */
+
+.progress{
+    width:100%;
+    height:20px;
+    background:lightgrey;
+    color: var(--moderate-cyan);
+    border-radius:20px;
+    position: relative;
+}
+
+.progress::before{
+    content: "";
+    position: absolute;
+    background-color:var(--Moderate-cyan);
+    width:80%;
+    height:20px;
+    left:0;
+    border-radius:20px;
+}
+
+
+
+/* CONTENT BOX 3 ARTICLE WITH FUND RAISING AREA AND GIFT */
+
+.contentbox3{
+    position: relative;
+    top:-40px;
+    text-align: left;
+    z-index: 1;
+}
+
+
+.contentbox3 h5{
+    font-size:20px;
+    font-weight:600;
+    margin:20px 0;
+}
+
+
+.contentbox3 p{
+    font-size:16px;
+    font-weight:500;
+}
+
+.contentbox3 .incontentbox{
+    padding:20px;
+    border:2px solid lightgrey;
+    border-radius:20px;
+    margin:0 0 20px;
+    text-align: left;
+}
+
+.contentbox3   .incontentbox div{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contentbox3   .incontentbox div small{
+    color:var(--Dark-gray);
+}
+
+.contentbox3 .incontentbox div h5:last-child{
+    color:var(--Moderate-cyan);
+    font-size:17px;
+}
+
+.contentbox3 .incontentbox div button{
+    padding:15px 30px;
+    border-radius:30px;
+    background-color: var(--Moderate-cyan);
+    border:none;
+    outline:none;
+    font-size:13px;
+    font-weight:600;
+    color:#fff;
+    transition: background-color 2s;
+}
+
+
+.contentbox3 .incont3{
+    opacity: .5;
+}
+
+.contentbox3 .incont3 .flex2 button{
+    background-color: var(--Dark-gray);
+}
+
+    /* BUTTONS ACTIVATION ON HOVER */
+
+.bookmarksection button:first-child:hover,
+.contentbox3 .incontentbox div button:hover{
+    background-color: var(--Dark-cyan);
+}
+
+.bookmarksection button:hover,
+.contentbox3 .incont3 .flex2 button:hover{
+    background-color: lightgrey;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+
+    /* MODAL SECTION  */
+
+.modal{
+    position: absolute;
+    background-color: #fff;
+    padding:30px;
+    top:0;
+    border-radius:20px;
+    text-align: left;
+    z-index: 5;
+    visibility:hidden;
+    margin:20% 23vw;
+}
+
+.modal .para{
+    margin:20px 40px;
+}
+
+.modal .modalnav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:0 40px;
+}
+
+.modalclose{
+    background-color: rgba(0, 0, 0, 0.557);
+    border-radius: 30px;
+    padding:10px;
+    cursor: pointer;
+}
+
+.modal div .modalflex{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.modal .chw{
+    border:2px solid lightgrey;
+    border-radius:10px;
+    margin:20px  30px 20px;
+    text-align: left;
+    padding:20px;
+}
+
+.modal .chw h5{
+    margin:0 0 0 70px;
+    transition: color 2s;
+}
+
+.modal .chew h5:first-child:hover,
+.modal .chw h5:hover{
+    color:var(--Moderate-cyan);
+    transition: color 2s;
+}
+
+
+.modal .chw p{
+    margin:20px 20px 30px 70px;
+    font-size:13px;
+    word-wrap: break-word;
+}
+
+.modal .chew p{
+    margin:0 0 0 60px;
+    padding:10px 0px;
+    font-size:14px;
+}
+
+.modal h5{
+    font-size:18px;
+    font-weight:600;
+    margin:10px 0 10px;
+}
+
+.modal .chw:hover{
+    border-color: var(--Moderate-cyan);
+}
+
+.modal .chw .incontent button{
+    padding:10px 20px;
+    background-color: var(--Dark-cyan);
+    color:#fff;
+    border:none;
+    border-radius: 30px;
+    font-size: 15px;
+}
+
+.modal .chw .incontent button:hover::after{
+    background-color: var(--Dark-cyan);
+    content: "";
+    width:10px;
+    height:10px;
+    border:2px solid #fff;
+    position: absolute;
+    top:160px;
+    left:95px;
+    border-radius:50px ;
+    transition: all 2s;
+}
+
+.modal .chw::before,
+.modal .modalflex::before{
+    content: "";
+    width:20px;
+    height:20px;
+    border:2px solid lightgray;
+    position: absolute;
+    left:90px;
+    border-radius:50px ;
+}
+
+.modal .modalflex:hover::before{
+    border-color: var(--Moderate-cyan);
+}
+
+
+.modal .chew2 .incontent button:hover::after{
+    content: "";
+    width:10px;
+    height:10px;
+    border:2px solid #fff;
+    background-color: var(--Dark-cyan);
+    position: absolute;
+    top:337px;
+    left:95px;
+    border-radius:50px ;
+    transition: all 2s;
+}
+
+
+.modal h5:first-child span{
+    margin:0 0 0 20px;
+    color:var(--Moderate-cyan);
+}
+
+
+.modal h5 span{
+    margin:0px;
+    color:var(--Dark-gray);
+     font-size:13px;
+}
+
+.modal .chew2{
+    border:2px solid lightgrey;
+    border-radius:10px;
+    margin:20px  30px 20px;
+    text-align: left;
+    padding:20px;
+    /* padding:20px; */
+}
+
+.modal .modalinflex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal .modalinflex .h5{
+    margin:0 80px 0 50px;
+}
+
+.modal .modalinflex h6{
+    color:var(--Moderate-cyan);
+    font-size:18px;
+    margin:0 40px 0 45px;
+}
+
+.modal .chew2:hover{
+    border-color: var(--Moderate-cyan);
+}
+
+.modal .chw .incontent,
+.modal .chew2 .incontent{
+    padding:20px 0;
+    border-top: 2px solid lightgray;
+    margin:10px 0 10px;
+}
+
+.modal .chw .incontent,
+.modal .chew2 .incontent{
+    display: none ;
+}
+
+.modal .chw:hover .incontent,
+.modal .chew2:hover .incontent{
+    display: block;
+}
+
+/* .modal .chw .incontent button:hover::after{
+    content: "";
+    width:10px;
+    height:10px;
+    border:2px solid #fff;
+    background-color: var(--Dark-cyan);
+    position: absolute;
+    top:611px;
+    left:95px;
+    border-radius:50px ;
+} */
+
+.modal .chew4 .incontent button:hover::after{
+    content: "";
+    width:10px;
+    height:10px;
+    border:2px solid #fff;
+    background-color: var(--Dark-cyan);
+    position: absolute;
+    top:497px;
+    left:95px;
+    border-radius:50px ;
+    transition: all 2s;
+}
+
+.modal .chw .incontent input{
+    width:55%;
+    height:40px;
+    margin:10px 0 0;
+    border:none;
+    outline:none;
+    padding:10px;
+    font-size:  18px;
+}
+
+.modal .chw .incontent .span{
+    width:15%;
+    margin:0 10px 0 40px;
+    border-radius:20px;
+    border:2px solid lightgray;
+    padding:10px;
+}
+
+.modal .chew2 .incontent input{
+    width:55%;
+    height:40px;
+    margin:10px 0 0;
+    border:none;
+    outline:none;
+    padding:10px;
+    font-size:  18px;
+}
+
+.modal .chew2 .incontent button{
+    padding:10px 15px;
+    margin:0 15px 0 0;
+    border-radius: 20px;
+    border:2px solid var(--Dark-cyan);
+    outline:none;
+    background:var(--Dark-cyan);
+    font-size: 16px;
+    font-weight:500;
+    color:#fff;
+}
+
+.modal .chew2 .incontent .span{
+    width:15%;
+    margin:0 10px 0 40px;
+    border-radius:20px;
+    border:2px solid lightgray;
+    padding:10px;
+}
+
+.modal .chew2 .incontent .span:hover{
+    border-color: var(--Moderate-cyan);
+}
+
+.modal .chew2 .incontent button span{
+    margin:0 4px 0 8px;
+    color:var(--Moderate-cyan)
+}
+
+.modal .chew3 div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin:15px 0;
+    opacity:.4;
+}
+
+.modal .chew3 div h5:first-child{
+    margin:0 60px;
+}
+
+.modal .chew3 div h5:last-child{
+    margin:0 0 0 40px;
+}
+
+.confirm-alert{
+    position: absolute;
+    top:0;
+    margin:35.5% 30vw 0;
+    background:#fff;
+    z-index: 7;
+    padding:40px 30px;
+    text-align: center;
+    border-radius:10px;
+    display: none;
+}
+
+.confirm-alert h4{
+    margin:20px 0 10px;
+}
+
+.confirm-alert p{
+    line-height: 2rem;
+    font-size:17px;
+}
+
+.confirm-alert button{
+    padding:10px 30px;
+    font-size:19px;
+    color:#fff;
+    background:var(--Moderate-cyan);
+    border-radius:30px;
+    border:none;
+}
+
+@media screen and (max-width:480px){
+
+    body{
+        overflow-x: hidden;
+    }
+    
+    .hamOpen,
+    .close{
+        display:flex;
+    }
+
+    .close{
+        display: none;
+    }
+
+    .navbar{
+        margin:0;
+        padding:30px 30px 200px;
+        position: relative;
+        width:100%;
+        background-image: url(images/image-hero-mobile.jpg);
+        background-size: 100%;
+    }
+
+    .navbar .drop{
+        position: absolute;
+        margin:250px 0 0 20px;
+        left:0;
+        display:none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #fff;
+        color:#000;
+        width:90%;
+        z-index: 7;
+        border-radius: 5px;
+        box-shadow: 0 8px 12px 0 black;
+    }
+
+    .navbar .drop ul{
+        flex-direction: column;
+    }
+
+    .navbar .drop ul li:first-child,
+    .navbar .drop ul li:nth-child(2){
+        padding:20px;
+        border-bottom: 2px solid lightgray;
+        width: 100%;
+    }
+
+    .navbar .drop ul li{
+        width:100%;
+        padding:20px;
+    }
+
+    .position{
+        top:0px;
+        margin:0 5vw;
+    }
+
+    .contentbox{
+        padding:25px 15px;
+        border-radius: 20px;
+    }
+
+    
+
+    p{
+        font-size:16px;
+    }
+/* 
+    BOOKMARKED SECTION */
+
+    .bookmarksection .img2{
+        left:0;
+        top:-1px;
+    }
+
+    .bookmarksection button:first-child{
+        padding:20px 60px;
+    }
+
+    .bookmarksection button:last-child{
+        display: none;
+    }
+
+    /* STATS */
+    .flex{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .flex h4{
+        padding:0;
+        margin:20px 0 0;
+    }
+
+    .flex .border{
+        border:0;
+        padding:0;
+        border-bottom: 2px solid lightgray;
+    }
+
+    .flex .border:nth-child(2){
+        padding:0;
+    }
+
+    /* ABOUT */
+
+    .incontentbox {
+        text-align: left;
+    }
+
+    .contentbox3   .incontentbox div{
+        display:block;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .incontentbox div h5{
+        margin:10px 0 5px;
+        padding:0;
+        text-align: left;
+    }
+
+
+    /* MODAL SECTION */
+    .modal{
+        position: absolute;
+        background-color: #fff;
+        padding:30px;
+        margin:20% 5%;
+        width:90%;
+        object-fit:cover;
+    }
+
+    .modal .modalnav{
+        margin:0;
+    }
+
+    .modal .para{
+        margin:10px 0 10px 0px;
+    }
+
+    .modal .chw,
+    .modal .chew{
+        margin:20px 0 10px;
+        padding:20px 20px;
+        position: relative;
+    }
+
+    .modal .chw h5{
+        margin:0 0 20px 50px;
+    }
+
+    .modal .chw p,
+    .modal .chew p{
+        margin:0;
+        padding: 0 0 40px;
+    }
+    
+    .modal div .modalflex,
+    .modal div .modalinflex{
+        flex-direction: column;
+    }
+
+    .modal .modalinflex .h5{
+        margin:0;
+    }
+
+    .modal .chew3 div h5:first-child{
+        margin:0;
+    }
+
+    .modal .chew3 div h6{
+        margin:15px 0 10px;
+    }
+
+    .modal .chew3 div h5:last-child{
+        margin:0;
+        padding:0;
+    }
+    
+    .modal .chew3 div{
+        margin:0 0 0 0px;
+    }
+
+    .modal .modalinflex{
+        display: block;
+        margin:0;
+    }
+
+    .modal .modalinflex h6{
+        font-size:16px;
+        margin:10px 0 10px;
+    }
+
+    .modal .chw::before{
+        content: "";
+        width:20px;
+        height:20px;
+        border:2px solid lightgray;
+        position: absolute;
+        left:20px;
+        border-radius:50px ;
+    }
+    
+    .modal .modalflex::before{
+        content: "";
+        width:20px;
+        height:20px;
+        border:2px solid lightgray;
+        position: absolute;
+        left:20px;
+        top:39px;
+        border-radius:50px ;
+    }
+
+    .modal .modalflex h5:last-child{
+        position: absolute;
+        top:160px;
+        left:20px;
+        margin:20px 0 20px;
+    }
+
+    /* .modal .chw .incontent,
+    .modal .chew .incontent{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+     */
+    .modal .chw .incontent input,
+    .modal .chew .incontent input{
+        width:100%;
+        margin:10px 0;
+    }
+
+    .modal .chw .incontent input::placeholder,
+    .modal .chew .incontent input::placeholder{
+        text-align: center;
+    }
+
+    .modal .chew .incontent button{
+        padding:10px 10px;
+    }
+    
+
+    .modal .chew .incontent span .span{
+        width:30%;
+        border-radius: 20px;
+    }
+
+    .modal .chew .incontent span .span::placeholder{
+        font-weight:600;
+        color:#000;
+    }
+
+    .modal .chw .incontent button:hover::after{
+        content: "";
+        width:10px;
+        height:10px;
+        border:2px solid #fff;
+        background-color: var(--Dark-cyan);
+        position: absolute;
+        top:25px;
+        left:25px;
+        border-radius:50px ;
+        transition: all 2s;
+    }
+
+    .modal .chew .incontent button:hover::after{
+        content: "";
+        width:10px;
+        height:10px;
+        border:2px solid #fff;
+        background-color: var(--Dark-cyan);
+        position: absolute;
+        top:44px;
+        left:25px;
+        border-radius:50px ;
+        transition: all 2s;
+    }
+
+    /* ALERT SECTION */
+    
+    .confirm-alert{
+        width:90%;
+        left:0;
+        top:0;
+        margin:32% 5%;
+    }
+
+}
